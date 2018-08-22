@@ -1,0 +1,7 @@
+# Module
+.idea/
+node_modules/
+build/
+*chunk.*
+*bundle.*
+server.js

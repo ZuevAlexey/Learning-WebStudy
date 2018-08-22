@@ -1,0 +1,32 @@
+.header {
+    width: auto;
+    background: cadetblue;
+    margin-top: 0;
+}
+
+.header .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .navbar .item {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.header .navbar .item.active {
+    background: lightskyblue;
+}
+
+.header .navbar .item .link{
+    text-decoration: none;
+    color: white;
+}
+
+.header .navbar .item .link:hover {
+    color: mediumslateblue;
+}
