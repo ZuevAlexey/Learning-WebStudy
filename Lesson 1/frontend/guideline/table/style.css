@@ -1,0 +1,19 @@
+.table {
+    border: 2px double black;
+    display: table;
+    border-collapse: collapse;
+}
+
+.table caption {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.table td, .table th {
+    border: 2px double black;
+    width: 40px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.tabl

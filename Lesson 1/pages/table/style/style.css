@@ -2,7 +2,5 @@
 @import "../../../frontend/guideline/header/style.css";
 @import "../../../frontend/guideline/footer/style.css";
 @import "../../../frontend/guideline/container/style.css";
+@import "../../../frontend/guideline/table/style.css";
 @import "../../../frontend/guideline/code-example/style.css";
-@import "../../../frontend/guideline/input-text-area/style.css";
-
-
