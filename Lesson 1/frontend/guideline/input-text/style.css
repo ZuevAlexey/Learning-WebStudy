@@ -10,6 +10,7 @@
 
 .input-text > input, .input-text > label {
     font-size: medium;
+    margin: 0px 0px 0px 0px;
 }
 
 .input-text > input:focus{

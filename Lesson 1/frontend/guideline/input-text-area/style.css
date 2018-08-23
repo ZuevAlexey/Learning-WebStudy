@@ -5,6 +5,7 @@
 
 .input-text-area textarea {
     width: 1000px;
+    margin-top: 10px;
 }
 
 .input-text-area > textarea:focus {
