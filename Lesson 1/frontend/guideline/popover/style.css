@@ -1,7 +1,7 @@
 @import '../button/style.css';
 
 .popover {
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .popover.open .pp-body {

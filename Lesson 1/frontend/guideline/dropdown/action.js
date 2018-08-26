@@ -7,14 +7,14 @@
     Array.from(containers).map(function (container) {
         var btn = container.querySelector('.dd-btn');
 
-
-        btn.onclick = function() {
-            console.log('btn');
+        btn.onclick = function(e) {
             if (container.classList.contains(OPEN_CLASS)) {
                 container.classList.remove(OPEN_CLASS);
             } else {
+                closeAnotherDropdown();
                 container.classList.add(OPEN_CLASS);
             }
+			e.stopPropagation();
         };
 
         var text = btn.querySelector('.dd-text');
@@ -34,16 +34,14 @@
         });
     });
 
-    //TODO:закрывать меню, когда клик мимо
-    /*
-    document.onclick = function(e){
-        console.log('window');
-        if(!e.target.classList.contains(OPEN_CLASS) && !e.target.classList.contains('.dropdown')){
-            var openElement = document.querySelector('.dropdown.open');
-            if(openElement !== null){
-                openElement.classList.remove(OPEN_CLASS);
-            }
-        }
-    };
-    */
+    function closeAnotherDropdown() {
+        var openElements = document.querySelectorAll('.dropdown.open');
+        Array.from(openElements).map(function(element) {
+            element.classList.remove(OPEN_CLASS);
+        });
+    }
+
+    document.addEventListener('click', function(e){
+        closeAnotherDropdown();
+    });
 })();
