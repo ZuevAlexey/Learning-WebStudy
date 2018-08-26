@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <title>Гайдлайн - modal window</title>
+    <script defer src="../../frontend/guideline/modal-window/action.js" ></script>
 </head>
 <body>
     <div class="page-container">
@@ -39,7 +40,46 @@
         </header>
         <div class="container content">
             <h1>Modal window</h1>
-            <code class="example"></code>
+            <button class="btn teal" onclick="showModal('mw1')">Модальник 1</button>
+            <button class="btn teal" onclick="showModal('mw2')">Модальник 2</button>
+            <div class="modal-window mw1" data-caption="Удаление истории" data-successtext="Удаление истории может занять некоторое время">
+                <div class="mw-form">
+                    <h2 class="mw-caption"></h2>
+                    <text class="mw-text">После удаления, история будет недоступна. Продолжить?</text>
+                    <button class="btn teal mw-ok">Да, сделать все равно</button>
+                    <button class="btn teal mw-close">Закрыть</button>
+                </div>
+                <div class="mw-overlay" ></div>
+            </div>
+            <div class="modal-window outclick-close mw2" data-caption="Загрузка обновления" data-successtext="Загрузка...">
+                <div class="mw-form">
+                    <h2 class="mw-caption"></h2>
+                    <text class="mw-text">Обновление весит 713мб. Вы уверены, что хотите загрузить его с мобильного интернета?</text>
+                    <button class="btn teal mw-ok">Да</button>
+                    <button class="btn teal mw-close">Закрыть</button>
+                </div>
+                <div class="mw-overlay" ></div>
+            </div>
+            <code class="example">&lt;button class="btn teal" onclick="showModal('mw1')"&gt;Модальник 1&lt;/button&gt;
+                <br>&lt;button class="btn teal" onclick="showModal('mw2')"&gt;Модальник 2&lt;/button&gt;
+                <br>&lt;div class="modal-window mw1" data-caption="Удаление истории" data-successtext="Удаление истории может занять некоторое время"&gt;
+                <br>&emsp;&emsp;&lt;div class="mw-form"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;h2 class="mw-caption"&gt;&lt;/h2&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;text class="mw-text"&gt;После удаления, история будет недоступна. Продолжить?&lt;/text&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;button class="btn teal mw-ok"&gt;Да, сделать все равно&lt;/button&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;button class="btn teal mw-close"&gt;Закрыть&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&emsp;&emsp;&lt;div class="mw-overlay" &gt;&lt;/div&gt;
+                <br>&lt;/div&gt;
+                <br>&lt;div class="modal-window outclick-close mw2" data-caption="Загрузка обновления" data-successText="Загрузка..."&gt;
+                <br>&emsp;&emsp;&lt;div class="mw-form"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;h2 class="mw-caption"&gt;&lt;/h2&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;text class="mw-text"&gt;Обновление весит 713мб. Вы уверены, что хотите загрузить его с мобильного интернета?&lt;/text&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;button class="btn teal mw-ok"&gt;Да&lt;/button&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;button class="btn teal mw-close"&gt;Закрыть&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&emsp;&emsp;&lt;div class="mw-overlay" &gt;&lt;/div&gt;
+                <br>&lt;/div&gt;</code>
         </div>
         <footer class="footer">
             <div class = "container">

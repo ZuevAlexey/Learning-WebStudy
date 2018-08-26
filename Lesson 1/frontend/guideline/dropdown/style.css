@@ -19,10 +19,16 @@
     display: inline-block;
 }
 
-.dropdown .dd-menu{
+.dropdown .dd-menu {
+    z-index: 10;
+    position: absolute;
     border: 1px solid black;
+    background: white;
     margin: 1px 0px 0px 0px;
     display: none;
+    width: 100%;
+    max-width: 100px;
+    opacity: 1;
 }
 
 .dropdown.open .dd-menu {

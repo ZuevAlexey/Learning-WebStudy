@@ -27,10 +27,10 @@
     background: darkgrey;
 }
 
-.btn.teal {
+.btn.teal:not([disabled]) {
     background: teal;
 }
 
-.btn.purple {
+.btn.purple:not([disabled]) {
     background: purple;
 }
