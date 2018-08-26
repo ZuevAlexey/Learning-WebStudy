@@ -4,7 +4,8 @@
 
 
 .input-text-area textarea {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin-top: 10px;
 }
 
