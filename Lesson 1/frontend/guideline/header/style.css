@@ -28,7 +28,6 @@
 }
 
 .header .navbar .item .link:hover {
-   /* color: mediumslateblue;*/
     font-weight: bold;
     text-decoration: underline;
 }

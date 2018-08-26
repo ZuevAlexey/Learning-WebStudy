@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <title>Гайдлайн - popover</title>
+    <script defer src="../../frontend/guideline/popover/action.js" ></script>
 </head>
 <body>
     <div class="page-container">
@@ -11,7 +12,7 @@
             <div class="container">
                 <ul class="navbar">
                     <li class="item">
-                        <a class = "link" href="index.html">Button</a>
+                        <a class = "link" href="../button/index.html">Button</a>
                     </li>
                     <li class="item">
                         <a class = "link" href="../container/index.html">Container</a>
@@ -39,7 +40,30 @@
         </header>
         <div class="container content">
             <h1>Popover</h1>
-            <code class="example"></code>
+            <div class="popover" data-trigger="click">
+                <button class="btn pp-btn">Спойлер - нажми</button>
+                <div class="pp-body">
+                    <text>Тут особо важная информация</text>
+                </div>
+            </div>
+            <div class="popover">
+                <button class="btn pp-btn">Спойлер - наведи</button>
+                <div class="pp-body">
+                    <text>Тут особо важная информация</text>
+                </div>
+            </div>
+            <code class="example">&lt;div class="popover" data-trigger="click"&gt;
+                <br>&emsp;&emsp;&lt;button class="btn pp-btn"&gt;Спойлер - нажми&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;&lt;div class="pp-body"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;&lt;text&gt;Тут особо важная информация&lt;/text&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&lt;/div&gt;
+                <br>&lt;div class="popover"&gt;
+                <br>&emsp;&emsp;&lt;button class="btn pp-btn"&gt;Спойлер - наведи&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;div class="pp-body"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;text&gt;Тут особо важная информация&lt;/text&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&lt;/div&gt;</code>
         </div>
         <footer class="footer">
             <div class = "container">

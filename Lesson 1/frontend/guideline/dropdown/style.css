@@ -1,0 +1,42 @@
+.dropdown{
+    width: 100%;
+    max-width: 100px;
+    margin: 10px;
+}
+
+.dropdown .dd-btn {
+    background: none;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.dropdown .dd-btn:disabled {
+    border: 1px solid #d4cfd4;
+}
+
+.dropdown .dd-caret {
+    margin: 2px 2px 2px 10px;
+    display: inline-block;
+}
+
+.dropdown .dd-menu{
+    border: 1px solid black;
+    margin: 1px 0px 0px 0px;
+    display: none;
+}
+
+.dropdown.open .dd-menu {
+    display: block;
+}
+
+.dropdown.open .dd-caret {
+    transform: rotate(180deg);
+}
+
+.dropdown .dd-element:hover {
+    background: #d4cfd4;
+}
+
+.dropdown .dd-element.selected {
+    background: lightskyblue;
+}

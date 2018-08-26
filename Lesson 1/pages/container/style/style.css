@@ -8,7 +8,7 @@
 @import "../../../frontend/guideline/code-example/style.css";
 
 .container.visible{
-    background: burlywood;
+    background: rgba(255,221,171,0.78);
 }
 
 .container .table {

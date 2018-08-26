@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
     <title>Гайдлайн - dropdown</title>
+    <script defer src="../../frontend/guideline/dropdown/action.js" ></script>
 </head>
 <body>
     <div class="page-container">
@@ -11,7 +12,7 @@
             <div class="container">
                 <ul class="navbar">
                     <li class="item">
-                        <a class = "link" href="index.html">Button</a>
+                        <a class = "link" href="../button/index.html">Button</a>
                     </li>
                     <li class="item">
                         <a class = "link" href="../container/index.html">Container</a>
@@ -39,7 +40,54 @@
         </header>
         <div class="container content">
             <h1>Dropdown</h1>
-            <code class="example"></code>
+            <div class="dropdown">
+                <button class="dd-btn">
+                    <span class="dd-text">С#</span>
+                    <span class="dd-caret">↓</span>
+                </button>
+                <div class="dd-menu">
+                    <div class="dd-element selected">JavaScript</div>
+                    <div class="dd-element">Java</div>
+                    <div class="dd-element">C++</div>
+                    <div class="dd-element">C#</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dd-btn" disabled>
+                    <span class="dd-text">С#</span>
+                    <span class="dd-caret">⇩</span>
+                </button>
+                <div class="dd-menu">
+                    <div class="dd-element selected">JavaScript</div>
+                    <div class="dd-element">Java</div>
+                    <div class="dd-element">C++</div>
+                    <div class="dd-element">C#</div>
+                </div>
+            </div>
+            <code class="example">&lt;div class="dropdown"&gt;
+                <br>&emsp;&emsp;&lt;button class="dd-btn"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;span class="dd-text"&gt;С#&lt;/span&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;span class="dd-caret"&gt;↓&lt;/span&gt;
+                <br>&emsp;&emsp;&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;div class="dd-menu"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element selected"&gt;JavaScript&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;Java&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;C++&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;C#&lt;/div&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&lt;/div&gt;
+                <br>&lt;div class="dropdown"&gt;
+                <br>&emsp;&emsp;&lt;button class="dd-btn" disabled&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;span class="dd-text"&gt;С#&lt;/span&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;span class="dd-caret"&gt;⇩&lt;/span&gt;
+                <br>&emsp;&emsp;&lt;/button&gt;
+                <br>&emsp;&emsp;&lt;div class="dd-menu"&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element selected"&gt;JavaScript&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;Java&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;C++&lt;/div&gt;
+                <br>&emsp;&emsp;&emsp;&emsp;&lt;div class="dd-element"&gt;C#&lt;/div&gt;
+                <br>&emsp;&emsp;&lt;/div&gt;
+                <br>&lt;/div&gt;</code>
         </div>
         <footer class="footer">
             <div class = "container">
