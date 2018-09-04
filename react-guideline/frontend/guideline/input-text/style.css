@@ -1,0 +1,44 @@
+.input-text {
+    margin-top: 10px;
+}
+
+.input-text > input {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}
+
+.input-text > input, .input-text > label {
+    font-size: medium;
+    margin: 0px 0px 0px 0px;
+}
+
+.input-text > input:focus{
+    background: rgba(190,250,255,0.78);
+}
+
+.input-text > input:disabled {
+    background: darkgrey;
+}
+
+.input-text > input:not([disabled]):hover {
+    border: 2px solid lightskyblue;
+}
+
+.input-text.small > input {
+    width: 150px;
+    height: 15px;
+}
+
+.input-text.small > input, .input-text.small > label {
+    font-size: small;
+}
+
+.input-text.large > input{
+    width: 250px;
+    height: 30px;
+}
+
+.input-text.large > input, .input-text.large > label {
+    font-size: large;
+}

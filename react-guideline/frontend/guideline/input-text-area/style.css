@@ -1,0 +1,28 @@
+.input-text-area {
+    margin-top: 20px;
+}
+
+
+.input-text-area textarea {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 10px;
+}
+
+.input-text-area > textarea:focus {
+    background: rgba(190,250,255,0.78);
+}
+
+.input-text-area > textarea:disabled {
+    background: darkgrey;
+    resize: none;
+}
+
+.input-text-area > textarea:not([disabled]):hover {
+    border: 2px solid lightskyblue;
+}
+
+.input-text-area.resize-none textarea {
+    resize: none;
+}
+

@@ -1,0 +1,74 @@
+/* Дефолтная таблица */
+.table {
+    border: 2px double black;
+    display: table;
+    border-collapse: collapse;
+    margin-top: 1%;
+}
+
+.table caption {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.table td, .table th {
+    border: 2px double black;
+    width: 40px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+/* Таблица с HOVER */
+.t-min {
+    border: none;
+}
+
+.t-min caption {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.t-min th {
+    border: none;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 8px;
+}
+.t-min td {
+    border: 1px double black;
+    padding: 9px 8px;
+    transition: .3s linear;
+}
+
+.t-min td:hover  {
+    background: #d4cfd4;
+}
+
+/* Таблица с зеброй */
+
+.table .t-zebra {
+    /*оставить только внешнюю границу*/
+
+}
+
+.t-zebra caption {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: right;
+    font-style: italic;
+}
+
+.t-zebra th {
+    border: none;
+    padding: 10px 15px;
+}
+
+.t-zebra td {
+    border: none;
+    padding: 10px 15px;
+}
+
+.t-zebra tr:nth-child(2n) {
+    background: #d4cfd4;
+}

@@ -1,0 +1,18 @@
+@import '../button/style.css';
+
+.popover {
+    margin-top: 20px;
+}
+
+.popover.open .pp-body {
+    display: block;
+}
+
+.popover .pp-body {
+    display: none;
+    border: 1px;
+    background: #0000000d;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    max-width: 200px;
+}

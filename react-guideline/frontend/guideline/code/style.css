@@ -1,0 +1,16 @@
+.example {
+    border: 1px solid #00000026;
+    display: block;
+    padding: 10px 30px;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+    background: #0000000d;
+    box-sizing: border-box;
+    margin-top: 8px;
+    line-height: 1.5;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    max-width: 1000px;
+    width: 100%;
+}

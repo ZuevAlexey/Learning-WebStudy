@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    background: olivedrab;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    height: 32px;
+    padding: 0 15px;
+    min-width: 100px;
+}
+
+.btn:not([disabled]):hover {
+    transform: scale(1.05, 1.05);
+}
+
+.btn:active {
+    transform: scale(0.95, 0.95);
+}
+
+.btn:focus {
+    outline: blue auto 5px;
+}
+
+.btn:disabled {
+    background: darkgrey;
+}
+
+.btn.teal:not([disabled]) {
+    background: teal;
+}
+
+.btn.purple:not([disabled]) {
+    background: purple;
+}

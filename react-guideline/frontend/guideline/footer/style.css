@@ -1,0 +1,10 @@
+.footer {
+    position: relative;
+    background: cadetblue;
+    height: 100%;
+}
+
+.footer .email{
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
