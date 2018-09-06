@@ -1,8 +1,8 @@
 import './container.css';
-import {Container} from '../../guideline/container';
-import {InputText} from '../../guideline/input-text';
-import {Button} from '../../guideline/button';
-import {Table} from '../../guideline/table';
+import {Container} from '../../frontend/guideline/container';
+import {InputText} from '../../frontend/guideline/input-text';
+import {Button} from '../../frontend/guideline/button';
+import {Table} from '../../frontend/guideline/table';
 import React from 'react';
 
 let tableData = [
