@@ -61,10 +61,33 @@ const content = [
     <Example key={1} />
 ];
 
-const code = '<Button text=\'Default\' />\n\r' +
-    '<Button text=\'Disabled\' disabled = {true}/>\n' +
-    '<Button text=\'Teal\' className = \'teal\' />\n' +
-    '<Button text=\'Purple\' className = \'purple\' />';
+const code = '<div>\n' +
+    '<Button text=\'Модальник 1\' className=\'teal\' onClick={() => this.changeVisible(MODAL_ONE, true)}/>\n' +
+    '<Button text=\'Модальник 2\' className=\'teal\' onClick={() => this.changeVisible(MODAL_TWO, true)}/>\n' +
+    '{this.state[MODAL_ONE] === true && <ModalWindow\n' +
+    ' text = \'После удаления, история будет недоступна. Продолжить?\'\n' +
+    'processingText = \'Удаление истории может занять некоторое время\'\n' +
+    'caption = \'Удаление истории\'\n' +
+    'btnOkCaption = \'Да, сделать все равно\'\n' +
+    'btnCloseCaption = \'Закрыть\'\n' +
+    'btnOkCallback = {() => {\n' +
+    'setTimeout(() => this.changeVisible(MODAL_ONE, false), 1500)\n' +
+    '}}\n' +
+    'btnCloseCallback = {() => this.changeVisible(MODAL_ONE, false)}\n' +
+    '/>}\n' +
+    '{this.state[MODAL_TWO] === true && <ModalWindow\n' +
+    'text = \'Обновление весит 713мб. Вы уверены, что хотите загрузить его с мобильного интернета?\'\n' +
+    'processingText = \'Загрузка...\'\n' +
+    'caption = \'Загрузка обновления\'\n' +
+    'btnOkCaption = \'Да\'\n' +
+    'btnCloseCaption = \'Нет\'\n' +
+    ' btnOkCallback = {() => {\n' +
+    'setTimeout(() => this.changeVisible(MODAL_TWO, false), 1500)\n' +
+    '}}\n' +
+    ' btnCloseCallback = {() => this.changeVisible(MODAL_TWO, false)}\n' +
+    ' onOverlayClick = {() => this.changeVisible(MODAL_TWO, false)}\n' +
+    '/>}\n' +
+    '</div>';
 
 export default {
     content,

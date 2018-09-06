@@ -12,6 +12,8 @@ import Table from './pages/table';
 import Container from './pages/container';
 import Popover from './pages/popover';
 import ModalWindow from './pages/modalWindow';
+import DropDown from './pages/dropdown';
+
 
 function GetCurrentControl(controls){
     let path = window.location.pathname;
@@ -20,7 +22,7 @@ function GetCurrentControl(controls){
     });
 }
 
-let control = GetCurrentControl([Button, InputTextArea, InputText, Table, Container, Popover, ModalWindow]);
+let control = GetCurrentControl([Button, InputTextArea, InputText, Table, Container, Popover, ModalWindow, DropDown]);
 
 let App = () => {
     return (

@@ -1,14 +1,14 @@
 import './style.css';
 import React from 'react';
 
-export const Button = ({className, onClick, text, disabled, onMouseOver, onMouseOut}) => {
+export const Button = ({className, onClick, text, disabled, onMouseOver, onMouseOut, children}) => {
     return (
         <button className={`btn ${className !== undefined ? className : ''}`}
                 onClick={onClick}
                 onMouseOver={onMouseOver}
                 onMouseOut={onMouseOut}
                 disabled={disabled !== undefined ? disabled : ''}>
-            {text}
+            {text === undefined ? children : text}
         </button>
     );
 }
