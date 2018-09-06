@@ -1,5 +1,5 @@
 import React from 'react';
-import {InputTextArea} from "../../guideline/input-text-area";
+import {InputTextArea} from "../../frontend/guideline/input-text-area/index";
 
 const content = [
     <InputTextArea key = {1} caption='Введите текст:' placeholder='ваш текст' />,

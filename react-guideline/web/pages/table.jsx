@@ -1,4 +1,4 @@
-import {Table} from '../../guideline/table';
+import {Table} from '../../frontend/guideline/table/index';
 import React from 'react';
 
 let data = [

@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "simple react project",
   "license": "MIT",
+  "main": "entry.js",
   "files": [
-    "frontend",
-    "public"
+    "entry.js",
+    "frontend/"
   ],
   "dependencies": {
     "babel-cli": "6.26.0",

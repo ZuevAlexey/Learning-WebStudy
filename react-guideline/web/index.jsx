@@ -1,4 +1,4 @@
-import '../guideline/base.css';
+import './base.css';
 import {Header} from './header';
 import {Footer} from './footer';
 import {MenuItems} from './MenuItems.js';
@@ -15,14 +15,14 @@ import ModalWindow from './pages/modalWindow';
 import DropDown from './pages/dropdown';
 
 
-function GetCurrentControl(controls){
+const getCurrentControl = (controls) => {
     let path = window.location.pathname;
     return controls.find((e) => {
         return path.indexOf(e.caption) !== -1;
     });
-}
+};
 
-let control = GetCurrentControl([Button, InputTextArea, InputText, Table, Container, Popover, ModalWindow, DropDown]);
+let control = getCurrentControl([Button, InputTextArea, InputText, Table, Container, Popover, ModalWindow, DropDown]);
 
 let App = () => {
     return (
@@ -36,6 +36,6 @@ let App = () => {
             <Footer email='aleksey.zuev@ingate.ru' />
         </div>
     );
-}
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));

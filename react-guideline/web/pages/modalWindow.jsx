@@ -1,5 +1,5 @@
-import ModalWindow from '../../guideline/modal-window';
-import {Button} from '../../guideline/button';
+import ModalWindow from '../../frontend/guideline/modal-window/index';
+import {Button} from '../../frontend/guideline/button/index';
 import React from 'react';
 
 const MODAL_ONE = 'mw1Show';
@@ -62,31 +62,31 @@ const content = [
 ];
 
 const code = '<div>\n' +
-    '<Button text=\'Модальник 1\' className=\'teal\' onClick={() => this.changeVisible(MODAL_ONE, true)}/>\n' +
-    '<Button text=\'Модальник 2\' className=\'teal\' onClick={() => this.changeVisible(MODAL_TWO, true)}/>\n' +
-    '{this.state[MODAL_ONE] === true && <ModalWindow\n' +
-    ' text = \'После удаления, история будет недоступна. Продолжить?\'\n' +
-    'processingText = \'Удаление истории может занять некоторое время\'\n' +
-    'caption = \'Удаление истории\'\n' +
-    'btnOkCaption = \'Да, сделать все равно\'\n' +
-    'btnCloseCaption = \'Закрыть\'\n' +
-    'btnOkCallback = {() => {\n' +
-    'setTimeout(() => this.changeVisible(MODAL_ONE, false), 1500)\n' +
-    '}}\n' +
-    'btnCloseCallback = {() => this.changeVisible(MODAL_ONE, false)}\n' +
-    '/>}\n' +
-    '{this.state[MODAL_TWO] === true && <ModalWindow\n' +
-    'text = \'Обновление весит 713мб. Вы уверены, что хотите загрузить его с мобильного интернета?\'\n' +
-    'processingText = \'Загрузка...\'\n' +
-    'caption = \'Загрузка обновления\'\n' +
-    'btnOkCaption = \'Да\'\n' +
-    'btnCloseCaption = \'Нет\'\n' +
-    ' btnOkCallback = {() => {\n' +
-    'setTimeout(() => this.changeVisible(MODAL_TWO, false), 1500)\n' +
-    '}}\n' +
-    ' btnCloseCallback = {() => this.changeVisible(MODAL_TWO, false)}\n' +
-    ' onOverlayClick = {() => this.changeVisible(MODAL_TWO, false)}\n' +
-    '/>}\n' +
+    '    <Button text=\'Модальник 1\' className=\'teal\' onClick={() => this.changeVisible(MODAL_ONE, true)}/>\n' +
+    '    <Button text=\'Модальник 2\' className=\'teal\' onClick={() => this.changeVisible(MODAL_TWO, true)}/>\n' +
+    '    {this.state[MODAL_ONE] === true && <ModalWindow\n' +
+    '        text = \'После удаления, история будет недоступна. Продолжить?\'\n' +
+    '        processingText = \'Удаление истории может занять некоторое время\'\n' +
+    '        caption = \'Удаление истории\'\n' +
+    '        btnOkCaption = \'Да, сделать все равно\'\n' +
+    '        btnCloseCaption = \'Закрыть\'\n' +
+    '        btnOkCallback = {() => {\n' +
+    '            setTimeout(() => this.changeVisible(MODAL_ONE, false), 1500)\n' +
+    '        }}\n' +
+    '        btnCloseCallback = {() => this.changeVisible(MODAL_ONE, false)}\n' +
+    '    />}\n' +
+    '    {this.state[MODAL_TWO] === true && <ModalWindow\n' +
+    '        text = \'Обновление весит 713мб. Вы уверены, что хотите загрузить его с мобильного интернета?\'\n' +
+    '        processingText = \'Загрузка...\'\n' +
+    '        caption = \'Загрузка обновления\'\n' +
+    '        btnOkCaption = \'Да\'\n' +
+    '        btnCloseCaption = \'Нет\'\n' +
+    '        btnOkCallback = {() => {\n' +
+    '            setTimeout(() => this.changeVisible(MODAL_TWO, false), 1500)\n' +
+    '        }}\n' +
+    '        btnCloseCallback = {() => this.changeVisible(MODAL_TWO, false)}\n' +
+    '        onOverlayClick = {() => this.changeVisible(MODAL_TWO, false)}\n' +
+    '    />}\n' +
     '</div>';
 
 export default {

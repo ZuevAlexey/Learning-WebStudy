@@ -1,4 +1,4 @@
-import {Button} from '../../guideline/button';
+import {Button} from '../../frontend/guideline/button/index';
 import React from 'react';
 
 const content = [

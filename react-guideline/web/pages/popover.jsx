@@ -1,4 +1,4 @@
-import Popover from '../../guideline/popover';
+import Popover from '../../frontend/guideline/popover/index';
 import React from 'react';
 
 const content = [
@@ -7,7 +7,7 @@ const content = [
 ];
 
 const code = '<Popover text=\'Тут особо важная информация\' caption=\'Спойлер - нажми\' trigger=\'click\'/>,\n' +
-    '    <Popover text=\'Тут особо важная информация\' caption=\'Спойлер - наведи\' trigger=\'hover\'/>';
+    '<Popover text=\'Тут особо важная информация\' caption=\'Спойлер - наведи\' trigger=\'hover\'/>';
 
 export default {
     content,

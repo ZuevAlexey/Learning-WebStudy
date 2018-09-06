@@ -10,23 +10,16 @@ export default class Dropdown extends React.Component {
             open : false
         };
 
-        this.open = this.open.bind(this);
-        this.close = this.close.bind(this);
+        this.change = this.change.bind(this);
         this.select = this.select.bind(this);
+        this.handleOutsideClick = this.handleOutsideClick.bind(this);
     }
 
-    open(){
+    change(){
         this.setState({
             ...this.state,
-            open: true
-        })
-    }
-
-    close(){
-        this.setState({
-            ...this.state,
-            open: false
-        })
+            open: !this.state.open
+        });
     }
 
     select(selected){
@@ -36,20 +29,39 @@ export default class Dropdown extends React.Component {
         });
     }
 
+    handleOutsideClick(e){
+        if (this.node.contains(e.target)) {
+            return;
+        }
+        this.change();
+    }
+
+    componentWillUpdate(nextProps, nextState){
+        console.log(nextState)
+        if(nextState.open){
+            document.addEventListener('click', this.handleOutsideClick);
+        } else {
+            document.removeEventListener('click', this.handleOutsideClick);
+        }
+    }
+
     render() {
-        let {caret, items} = this.props;
+        let {caret, items, disabled} = this.props;
         let selected = this.state.selected;
+        let isOpen = this.state.open;
         return (
-            <div className="dropdown">
-                <button className="dd-btn" onClick = {this.open}>
+            <div ref={(node) => this.node = node} className={`dropdown ${isOpen ? 'open' : ''}`}>
+                <button className="dd-btn" onClick = {this.change} disabled={disabled !== undefined ? true : ''}>
                     <span className="dd-text">{selected}</span>
                     <span className="dd-caret">{caret}</span>
                 </button>
-                {this.state.open && <div className="dd-menu">
+                {isOpen && <div className="dd-menu">
                     {items.map((e, i) => {
                         return <div key = {i}
                                     className={`dd-element ${e === selected ? 'selected' : ''}`}
-                                    onClick = {() => this.select(e)}>
+                                    onClick = {() => {
+                                        this.select(e)
+                                    }}>
                             {e}
                             </div>
                     })}

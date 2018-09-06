@@ -1,5 +1,5 @@
-import {Code} from '../code';
-import {Container} from '../../guideline/container';
+import {Code} from '../code/index';
+import {Container} from '../../frontend/guideline/container/index';
 import React from 'react';
 
 export const PageContent = ({caption, content, code}) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {InputText} from "../../guideline/input-text";
+import {InputText} from "../../frontend/guideline/input-text/index";
 
 const content = [
     <InputText key = {1} className = 'small' caption='Введите текст:' placeholder='ваш текст' />,
