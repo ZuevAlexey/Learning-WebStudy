@@ -1,15 +1,3 @@
-.modal-window open{
-    display: block;
-}
-
-.modal-window{
-    display: none;
-}
-
-.modal-window.open{
-    display: block;
-}
-
 .modal-window .mw-form {
     z-index: 100;
     background: #d4cfd4;

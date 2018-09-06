@@ -8,11 +8,11 @@ export const MenuItems = [
         href: 'Container.html'
     },
     {
-        name: 'Input text',
+        name: 'InputText',
         href: 'InputText.html'
     },
     {
-        name: 'Input Text Area',
+        name: 'InputTextArea',
         href: 'InputTextArea.html'
     },
     {
@@ -21,14 +21,14 @@ export const MenuItems = [
     },
     {
         name: 'Popover',
-        href: '/Popover.html'
+        href: 'Popover.html'
     },
     {
         name: 'Dropdown',
         href: 'Dropdown.html'
     },
     {
-        name: 'Modal window',
+        name: 'ModalWindow',
         href: 'ModalWindow.html'
     }
 ];

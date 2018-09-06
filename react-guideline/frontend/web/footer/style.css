@@ -7,4 +7,5 @@
 .footer .email{
     padding: 10px 10px 10px 10px;
     color: white;
+    display: inline;
 }

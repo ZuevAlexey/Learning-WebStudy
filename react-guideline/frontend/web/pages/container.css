@@ -1,0 +1,8 @@
+.container.visible{
+    background: rgba(255,221,171,0.78);
+    border-radius: 5px;
+}
+
+.container .table.t-example {
+    margin: auto;
+}

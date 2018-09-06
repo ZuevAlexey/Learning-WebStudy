@@ -1,5 +1,5 @@
 import './style.css';
-import '../container/style.css';
+import '../../guideline/container/style.css';
 import React from 'react';
 
 export const Header = ({items, selected}) => {

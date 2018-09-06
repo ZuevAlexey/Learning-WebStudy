@@ -10,7 +10,7 @@ module.exports = {
     mode: NODE_ENV,
     watch: NODE_ENV === 'development',
 
-    entry: ['babel-polyfill', './frontend/guideline/index.jsx'],
+    entry: ['babel-polyfill', './frontend/web/index.jsx'],
     output: {
         path: path.resolve(__dirname, 'build/public'),
         filename: 'bundle.js'
