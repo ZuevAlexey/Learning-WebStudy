@@ -1,10 +1,9 @@
 import './style.css';
-import React from 'react';
 
-export const Container = ({className, content}) => {
+export const Container = ({className, children}) => {
     return (
         <div className={`container ${className !== undefined ? className : ''}`}>
-            {content}
+            {children}
         </div>
     );
 }

@@ -1,34 +1,34 @@
 export const MenuItems = [
     {
         name: 'Button',
-        href: 'Button.html'
+        href: routing.pages.button
     },
     {
         name: 'Container',
-        href: 'Container.html'
+        href: routing.pages.container
     },
     {
         name: 'InputText',
-        href: 'InputText.html'
+        href: routing.pages.inputText
     },
     {
         name: 'InputTextArea',
-        href: 'InputTextArea.html'
+        href: routing.pages.inputTextArea
     },
     {
         name: 'Table',
-        href: 'Table.html'
+        href: routing.pages.table
     },
     {
         name: 'Popover',
-        href: 'Popover.html'
+        href: routing.pages.popover
     },
     {
         name: 'Dropdown',
-        href: 'Dropdown.html'
+        href: routing.pages.dropdown
     },
     {
         name: 'ModalWindow',
-        href: 'ModalWindow.html'
+        href: routing.pages.modalWindow
     }
 ];

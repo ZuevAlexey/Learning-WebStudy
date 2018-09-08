@@ -1,5 +1,4 @@
 import './style.css';
-import React from 'react';
 import {Button} from '../button';
 
 export default class Dropdown extends React.Component {
@@ -37,7 +36,6 @@ export default class Dropdown extends React.Component {
     }
 
     componentWillUpdate(nextProps, nextState){
-        console.log(nextState)
         if(nextState.open){
             document.addEventListener('click', this.handleOutsideClick);
         } else {

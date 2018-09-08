@@ -1,13 +1,12 @@
 import './style.css';
-import '../../frontend/guideline/container/style.css';
-import React from 'react';
+import {Container} from '../../guideline/container';
 
 export const Footer = ({email}) => {
     return (
         <footer className="footer">
-            <div className="container">
+            <Container>
                 <p className="email">{`Email: ${email}`}</p>
-            </div>
+            </Container>
         </footer>
     );
 }

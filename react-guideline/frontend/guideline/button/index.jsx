@@ -1,5 +1,4 @@
 import './style.css';
-import React from 'react';
 
 export const Button = ({className, onClick, text, disabled, onMouseOver, onMouseOut, children}) => {
     return (

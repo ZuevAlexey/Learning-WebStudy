@@ -1,5 +1,4 @@
 import './style.css';
-import React from 'react';
 import {Button} from '../button';
 
 export default class Popover extends React.Component{

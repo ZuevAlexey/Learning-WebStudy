@@ -1,6 +1,6 @@
-import ModalWindow from '../../frontend/guideline/modal-window/index';
-import {Button} from '../../frontend/guideline/button/index';
-import React from 'react';
+import ModalWindow from '../../guideline/modal-window/index';
+import {Button} from '../../guideline/button/index';
+import {PageContent} from "../page-content";
 
 const MODAL_ONE = 'mw1Show';
 const MODAL_TWO = 'mw2Show';
@@ -53,14 +53,6 @@ class Example extends React.Component{
     }
 }
 
-
-
-
-
-const content = [
-    <Example key={1} />
-];
-
 const code = '<div>\n' +
     '    <Button text=\'Модальник 1\' className=\'teal\' onClick={() => this.changeVisible(MODAL_ONE, true)}/>\n' +
     '    <Button text=\'Модальник 2\' className=\'teal\' onClick={() => this.changeVisible(MODAL_TWO, true)}/>\n' +
@@ -89,8 +81,11 @@ const code = '<div>\n' +
     '    />}\n' +
     '</div>';
 
-export default {
-    content,
-    code,
-    caption: 'ModalWindow'
+export const ModalWindowPage = () => {
+    return (
+    <PageContent
+        caption= {'Modal window'}
+        code = {code} >
+            <Example />
+    </PageContent>);
 };

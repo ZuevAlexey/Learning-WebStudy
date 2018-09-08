@@ -1,5 +1,4 @@
 import './style.css';
-import React from 'react';
 
 const COLUMN_HEADER_PROP_NAME = 'columnHeaders';
 const ROW_HEADER_PROP_NAME = 'rowHeaders';
