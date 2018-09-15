@@ -1,6 +1,6 @@
 {
-  "name": "az-react-guideline",
-  "version": "0.0.4",
+  "name": "az-redux-calc",
+  "version": "0.0.1",
   "description": "simple react project",
   "license": "MIT",
   "main": "entry.js",
@@ -9,6 +9,7 @@
     "frontend/"
   ],
   "dependencies": {
+    "az-react-guideline": "0.0.4",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.0.1",
@@ -30,8 +31,10 @@
     "path": "0.12.7",
     "react": "16.0.0",
     "react-dom": "16.0.0",
+    "react-redux": "^5.0.7",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
     "style-loader": "0.19.0",
     "url-loader": "0.6.2",
     "webpack": "^4.17.2"

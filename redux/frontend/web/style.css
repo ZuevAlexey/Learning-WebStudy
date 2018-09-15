@@ -1,0 +1,25 @@
+.btn {
+    min-width: 75px;
+}
+
+.input-text > input {
+    width: 325px;
+    margin-left: 5px;
+}
+
+.input-text.error > input{
+    border: 1px solid red;
+}
+
+.calc {
+    border: 1px solid black;
+    width: 405px;
+}
+
+.history {
+    margin-left: 5px;
+}
+
+.input-text > input:disabled {
+    background: white;
+}
